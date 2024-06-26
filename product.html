@@ -100,7 +100,7 @@
                 <div class="col-6">
                     <p><q>Whether you're here to expand your knowledge, embark on a mushroom-growing adventure, or simply savor the umami goodness of mushrooms, K.R.Enterprise is your go-to resource. Join us as we explore the fascinating world of mushrooms together!</q></p>
                     <hr>
-                    <a href="" class="btn btn-dark w-25">Enquiry Now</a>
+                    <a href="" class="btn btn-dark w-25" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enquiry Now</a>
                 </div>
             </div>
         </div>
@@ -170,11 +170,54 @@
     </div>
     <!-- Copyright End -->
 
-
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">K.R.Enterprise
+      </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <div class="row">
+                 <div class="col-12 col-md-6 my-2">
+                     <input type="text" class="form-control name" value="" placeholder="Enter Your Name" />
+                 </div>
+                  <div class="col-12 col-md-6 my-2">
+                     <input type="number" class="form-control number" value="" placeholder="Enter Your Number" />
+                 </div>
+                 <div class="col-12  my-2">
+                     <input type="email" class="form-control email" value="" placeholder="Enter Your Email" />
+                 </div>
+                
+                  
+                 
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" onclick="go()" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
             class="bi bi-arrow-up"></i></a>
-
+            <script>
+                function go() {
+                    var name = document.querySelector(".name").value;
+                    var email = document.querySelector(".email").value;
+                    var number = document.querySelector(".number").value;
+                    var url = "https://wa.me/918287042772?text=" +
+                    "Name: " + 
+                    name + " " +
+                    "Number: " + 
+                    number + " " +
+                    "Email :" + email;
+                    window.open(url,"_blank").focus();
+                }
+            </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
