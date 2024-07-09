@@ -422,7 +422,7 @@
 
 /*** Testimonial ***/
 .testimonial {
-    background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(48, 49, 48, 0.575)), url(../image/banner/banner.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.582), rgba(48, 49, 48, 0.575)), url(../image/good2.jpg) center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -521,7 +521,7 @@
     }
 }
 .bg_about{
-    background-image: url("../image/banner/banner.jpg");
+    background-image: url("../image/1.jpg");
     height: 500px;
     width: 100%;
     background-size: cover;
